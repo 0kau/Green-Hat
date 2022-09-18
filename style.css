@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+}
+
+body {
+/* background-image:url(./assest/.bg.jpg);
+    background-color: #121214;  */
+
+    background-repeat:no-repeat;
+    background:top center;
+    background-size:100% auto;
+
+    background: linear-gradient(rgba(7, 5, 5, 0.999) 0%, rgb(26, 5, 67) 50%); 
+}
+
+
+body {
+    font-family: 'inter', sans-serif;
+    line-height: 160%;
+}
+
+
+header {
+    padding: 32px;
+    text-align: center;
+    height: calc(120px + 32px)
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg,rgba(210, 33, 210, 0.742) 0%, rgb(61, 33, 115) 30%, rgba(32, 114, 237, 0.81) 50%); 
+   
+    border-radius: 50%;
+
+    display: flex;
+    padding: 2.5px;
+
+    transition:transform .3s; 
+}
+
+
+header div:hover{
+    transform:scale(1.1)
+}
+
+header div img{
+    width: 100%;
+    border-radius: 50%; 
+}
+
+
+main{
+    margin: center;
+}
+
+main {
+    max-width: 580px;
+    width: 95%;
+    margin: 32px auto;  
+
+    display: grid;
+    gap: 24px;
+
+}
+
+
+
+section{
+    padding-top: 4px;
+    border-radius: 10px;  
+    color: rgb(216, 212, 212);
+    
+    background-image: linear-gradient(90deg, rgba(32, 114, 237, 0.81) 0%, rgba(28, 28, 193, 0.617) 20%,  rgba(210, 33, 210, 0.742) 40%);    
+/* linear-gradient(); é p/ fazer um gradiente */ 
+}   
+
+section div{
+    background-color: #27242d;
+    padding: 32px;
+    padding-top: 32px;
+    border-radius: 8px;
+} 
+
+
+section h2{
+    letter-spacing: -0,47px;
+}
+
+section p{
+    letter-spacing: -0,18;
+    color: #a1a1aa;
+}
+
+section ul{
+    display: flex;
+
+    gap: 16px;
+    margin-top: 24px;
+}
+
+
+.series-list img{
+    width: 150px;
+    border-radius: 8px;
+}
+
+.series-ani-list img{
+    width: 150px;
+    border-radius: 8px;
+}
+
+.social-list img{
+    border-radius: 8px;
+}
+
+/*     anotações:
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443e54
+    deixou as fotos bem arredondadinhas e fofinhas*/
+
+/* animaçãoI: */
+
+section ul li{
+    transition:transform .3s;
+}
+
+section ul li:hover{
+    transform:scale(1.1)
+}
+
+
+/* animaçãoII */
+header div{
+    animation: fromTop .7s .2s backwards;
+}
+
+main section {
+    animation:fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .3s;
+}
+
+main section:nth-child(3){
+    animation-delay: .6s;
+}
+
+
+
+
+@keyframes fromtop{
+  
+    from{
+        opacity: 0;
+        transform:translateY(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+}   
+
+
+@keyframes fromBottom{
+
+    from{
+        opacity: 0;
+        transform:translateX(-30px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
