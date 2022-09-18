@@ -1,12 +1,9 @@
 # NLW eSports 
-
-![preview]
-
 > Trilha Explorer
 
 Projeto construído no evento Next Level Week da Rocketseat
 
-## Tecnologias
+## Tecnologias usadas:
 
 - HTML
 - CSS
@@ -14,8 +11,7 @@ Projeto construído no evento Next Level Week da Rocketseat
 
 [Clique aqui para acessar](https://0kau.github.io/Green-Hat)
 
-## Contrato
-
+## Contato:
 kaunevl@hotmail.com
 
 
@@ -24,4 +20,3 @@ kaunevl@hotmail.com
 
 
 
-exemploss
